@@ -46,12 +46,7 @@ var app = {
 
         console.log('Received Event: ' + id);
 		
-		navigator.notification.alert(
-			'You are the winner!',  // message
-			alertDismissed,         // callback
-			'Game Over',            // title
-			'Done'                  // buttonName
-		);
+		window.plugin.notification.local.add({ message: 'Great app!' });
 
     }
 };
